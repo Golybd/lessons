@@ -1,0 +1,63 @@
+
+@import url("reset.css");
+
+* {
+    color: gray;
+}
+
+div {
+    color: darkgray;
+}
+
+a{
+    color: purple;
+}
+
+.text{
+    color: black;
+}
+
+#game_name{
+    color: fuchsia;
+}
+
+div.text{
+    color: blue;
+}
+
+.paragraph.text{
+    color: red;
+}
+
+.expansions_text,
+.footer_text{
+    color: aqua;
+}
+
+.list li{
+    color: aquamarine;
+}
+
+.story .title{
+    color: bisque;
+}
+
+header * {
+    color: black;
+}
+
+.world_list > li{
+    color: blueviolet;
+}
+
+.world_list ~ p{
+    color: brown;
+}
+
+.world_list-2 + p{
+    color: coral;
+}
+
+[class*="__title"]{
+    color: crimson;
+}
