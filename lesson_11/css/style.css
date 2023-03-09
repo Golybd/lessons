@@ -1,0 +1,345 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap);
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212B36;
+}
+
+[class*="__container"]{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.header__container {
+}
+.header__logo {
+    margin-right: 45px;
+    display: inline-block;
+    
+}
+.header__menu {
+    display: inline-block;
+}
+
+.drop-menu{
+    margin-right: 45px;
+    position: relative;
+}
+
+.drop-menu__link{
+    padding: 9px 45px 9px 20px;
+    background-color: #F4F7FF;
+    border-radius: 5px;
+    position: relative;
+}
+
+.drop-menu__link::after{
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    background-image: url("../img/header/icons/bird.svg");
+    top: 20px;
+    right: 13px;
+    transform: rotate(-90deg);
+    transition: all 0.3s ease 0s; 
+}
+.drop-menu__link:hover::after{
+    transform: rotate(0deg);
+}
+
+.menu {
+    margin-right: 151px;
+}
+.menu__list li{
+    font-weight: 600;
+}
+.menu__list{
+    position: relative;
+    top: 9px;
+}
+.menu__item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu__item:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transition: all 0.3s ease 0s; 
+}
+
+
+.menu__item:not(:last-child){
+    margin-right: 35px;
+}
+
+.menu__link {
+    display: inline-block;
+}
+
+.menu__link:hover{
+    color: #3056D3;
+}
+
+.shop-toolbar {
+    display: inline-block;
+    position: relative;
+}
+.shop-toolbar span{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    padding: 2px 4px;
+    border-radius: 50%;
+    background-color: #3056D3;
+    text-align: center;
+    align-self: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.2;
+
+}
+
+.shop-toolbar a{
+    position: relative;
+    bottom: -9px;
+}
+
+.shop-toolbar__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
+
+.drop-menu__sub-menu {
+    
+}
+.sub-menu::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 9px;
+    width: 170px;
+    height: 50px;
+    background-color: transparent;
+}
+.sub-menu {
+    background-color: #fff;
+    padding: 22px 24px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    border: 0.5px solid #E7E7E7;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s; 
+}
+
+
+.sub-menu__item {
+
+}
+
+.sub-menu__item:not(:last-child){
+    margin-bottom: 13px;
+}
+
+.sub-menu__link{
+    font-weight: 500;
+}
+
+.sub-menu__link:hover {
+    color: #3056D3;
+}
+
+
+
+
+.sub-menu__item:hover .sub-sub-menu__block {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transition: all 0.3s ease 0s; 
+}
+.sub-sub-menu {
+}
+.sub-menu__link {
+}
+.sub-sub-menu__block {
+    background-color: #fff;
+    padding: 30px;
+    position: absolute;
+    top: -30px;
+    left: 120%;
+    z-index: 1;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    border: 0.5px solid #E7E7E7;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s; 
+    height: 308px;
+    width: 700px;
+}
+
+
+.sub-sub-menu__block::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 50px;
+    height: 220px;
+    background-color: transparent;
+}
+
+.sub-sub-menu__list {
+    display: inline-block;
+
+}
+.sub-sub-menu__list:not(:last-child){
+    margin-right: 80px;
+}
+
+.sub-sub-menu__list:last-child{
+    margin-right: 68px;
+}
+
+.sub-sub-menu__title {
+    margin-bottom: 20px;
+}
+.drop-menu--right{
+    padding-right: 70px;
+    position: relative;
+}
+.drop-menu--right::after{
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    top: 10px;
+    right: 0;
+    background-image: url("../img/header/icons/bird.svg");
+    transform: rotate(-90deg);
+    transition: all 0.3s ease 0s; 
+}
+
+.drop-menu--right:hover::after{
+    transform: rotate(0deg);
+}
+
+
+
+
+.discount__block {
+    display: inline-block;
+    width: 220px;
+    height: 248px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    line-height: 1.2;
+}
+.discount-block__img{
+    max-width: 100%;
+    position: absolute;
+    z-index: 0;
+    
+}
+.discount-block::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(205, 131, 90, 0.65);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 4px;
+}
+.discount-block__percent {
+    position: absolute;
+    z-index: 2;
+    top: 65px;
+    left: 66px;
+    font-weight: 700;
+    font-size: 40px;
+}
+.discount-block__label {
+    position: absolute;
+    z-index: 2;
+    top: 113px;
+    left: 45px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.discount-block__button {
+    position: absolute;
+    z-index: 2;
+    bottom: 65px;
+    left: 69px;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 6px 14px;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.14);
+    background-color: #3056D3;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.discount-block__button:hover{
+    background-color: #5270d3;   
+}
+
+
+
+.page__block {
+    padding-top: 110px;
+}
+.block__container {
+}
+.block__body {
+    
+}
+.block__sticky {
+    position: sticky;
+    font-size: 40px;
+    text-align: center;
+    background-color: #3056D3;
+    color: #E7E7E7;
+    margin-bottom: 30px;
+    top: 109px;
+}
+.block__text {
+
+}
