@@ -1,0 +1,652 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap);
+
+[class*="__container"]{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.block-margin{
+    margin-bottom: 80px;
+}
+
+
+.page {
+}
+.page__transform {
+}
+.transform {
+    display: flex;
+    align-items: center;
+}
+.transform--margin{
+    margin-bottom: 100px;
+}
+.transform__container {
+}
+.transform__title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.transform__translate {
+}
+.translate {
+}
+.translate__title {
+}
+.title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.content-wrapper{
+    width: 150px;
+	height: 150px;
+	/* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: #fff;
+	perspective-origin: center;
+	perspective: 400px;
+}
+.content-block {
+    width: 150px;
+    height: 150px;
+    background-color: #f15656;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s; 
+    position: relative;
+}
+
+.translate__block:hover{
+    transform: translate(20px, 30px);
+}
+
+
+.scale__block:hover{
+    transform: scale(2);
+}
+
+
+.rotate__block:hover{
+    transform: rotate(180deg);
+}
+
+.skew__block:hover{
+    transform: skew(10deg, 0deg);
+}
+
+.matrix__block:hover{
+    transform: matrix(1, 0, 0, 2, 50, 0);
+}
+
+.multi__block:hover{
+    transform: translate(50px, 50px) scale(0.5) rotate(45deg);
+}
+
+.origin__block{
+    transform-origin: 0px 0px;
+}
+.origin__block:hover{
+    transform: rotate(-30deg);
+}
+
+.perspective__block{
+    transform: rotateX(0deg);
+}
+
+.perspective__block:hover{
+    transform: rotateX(50deg);
+}
+
+.translate3d__block{
+    transform: translate3D(0px, 0px, 0px);
+}
+.translate3d__block:hover{
+    transform: translate3D(20px, 20px, 50px);
+}
+
+.scale3d__block{
+    transform: scale3d(1, 1, 1);
+}
+.scale3d__block:hover{
+    transform: scale3d(2, 2, 2);
+}
+
+.rotate3d__block{
+    transform: rotate3d(1, 1, 1, 0deg);
+}
+.rotate3d__block:hover{
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.matrix3d__block{
+
+}
+.matrix3d__block:hover{
+    transform: translate3d(20px, 20px, 20px) rotate3d(1, 1, 1, 20deg)
+}
+
+.content-wrapper--style{
+    background-color: #ffffff54;
+    transform-style: preserve-3d;
+    transform: rotate3d(0deg);
+}
+
+.style__block:hover{
+    transform: rotateX(50deg);
+}
+
+
+.flip {
+	perspective: 500px;
+	transform-style: preserve-3d;
+}
+.flip__body {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #f15656;
+
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
+
+
+
+/* --------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.himars__car {
+    
+}
+
+.himars--margin{
+    margin-bottom: 100px;
+}
+.rocket__wrapper{
+    position: relative;
+}
+
+.rocket__body{
+    width: 300px;
+    height: 75px;
+    background-color: rgb(70, 80, 50);
+    position: relative;
+    border-radius: 5px;
+    top: -1px;
+}
+.rocket__body::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: rgb(70, 80, 50);
+    top: 0;
+    left: 98%;
+}
+
+.rocket__body::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: -10px;
+    left: 344px;
+    background-color: rgb(70, 80, 50);
+}   
+
+
+.rocket-body__decor{
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;    
+}
+
+.rocket-body__decor-1{
+    top: 12px;
+    left: 75px;
+}
+
+.rocket-body__decor-2{
+    top: 12px;
+    left: 150px;
+}
+
+.rocket-body__decor-3{
+    position: absolute;
+    width: 40px;
+    height: 52px;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 12px;
+    left: 225px;
+}
+
+.rocket-body__decor-4{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(70, 80, 50);
+    bottom: 99%;
+    left: 113px;
+    border-radius: 3px;
+    border: 0.1px solid black;
+}
+
+
+.himars__pendant{
+    position: relative;
+    left: 0;
+    bottom: 100%;
+    width: 570px;
+    height: 45px;
+    background-color: rgb(70, 80, 50);
+}
+
+
+
+.pendant__tank-1{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 0;
+    left: 230px;
+    background-color: rgb(94, 110, 62);
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+
+.pendant__tank-1::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.pendant__tank-1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 10px;
+    left: 0;
+    border-top: 0.5px solid black;
+}
+
+.pendant__tank-2{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    top: 0;
+    left: 315px;
+    background-color: rgb(94, 110, 62);
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-1{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-2{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-3{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-4{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+
+.wheels{
+    position: relative;
+    
+}
+
+
+.wheel{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #181717;
+    border-radius: 50%;
+    border: 5px dashed darkgrey;
+}
+.wheel::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px dotted darkgrey;
+}
+.wheel::before{
+    content: "";
+    position: absolute;
+    top: 37px;
+    left: 37px;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(95, 92, 92);
+    border-radius: 50%;
+}
+
+.wheel-1{
+    left: 15px;
+}
+
+.wheel-2{
+    left: 130px;
+}
+
+.wheel-3{
+    left: 410px;
+}
+
+
+.pendant__box{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(70, 80, 50);
+    top: -50px;
+    right: 215px;
+    border-radius: 3px;
+}
+
+.pendant__box::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.pendant__box::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: 25px;
+    left: 10px;
+    background-color: #000;
+}
+
+.pendant__box-2{
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    background-color: rgb(70, 80, 50);
+    top: -60px;
+    right: 172px;
+    border-radius: 3px;
+}
+
+.pendant__box-2::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.pendant__box-2::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: 25px;
+    left: 10px;
+    background-color: #000;
+
+}
+
+.pendant__step{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    right: 52px;
+    background-color: darkgrey;
+}
+
+.pendant__step-1{
+    bottom: 21px;
+}
+.pendant__step-2{
+    width: 16px;
+    bottom: 11px;
+}
+
+.cabin__top{
+    position: relative;
+    width: 160px;
+    height: 50px;
+    left: 400px;
+    bottom: 125px;
+    background-color: rgb(70, 80, 50);
+}
+
+.cabin__top::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #000;
+    top: -22px;
+    right: -47px;
+    transform: rotate(50deg);
+}
+.cabin__top::before{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 80px;
+    top: 15px;
+    right: 35px;
+    border: 2px solid #000;
+    z-index: 4;
+}
+
+.cabin__bottom{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    left: 420px;
+    bottom: 125px;
+    background-color: rgb(70, 80, 50);
+}
+
+.cabin__window{
+    position: absolute;
+    top: 30px;
+    right: 46px;
+    width: 22px;
+    height: 12px;
+    background-color: lightskyblue;
+    border: 1px solid #000;
+}
+
+.cabin__window::after{
+    content: "";   
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    top: -10px;
+    left: 149%;
+    background-color: rgb(94, 110, 62);
+    z-index: 10;
+}
+
+.cabin__window::before{
+    content: "";   
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    bottom: -47px;
+    left: 149%;
+    background-color: rgb(94, 110, 62);
+    z-index: 10;
+}
+
+.cabin__antenna{
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background-color: rgb(94, 110, 62);
+    bottom: 80%;
+    left: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cabin__handrail{
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background-color: #000;
+    top: 30px;
+    left: 60px;
+    z-index: 5;
+}
+
+.page__himars:hover .rocket__body{
+    transform: rotate(-15deg);
+    transform-origin: 0px 100%;
+}
+
+.page__himars:hover .rocket-nose__decor{
+    transform: rotate(-15deg);
+    transform-origin: 0px 100%;
+}
+
+.light {
+}
+.light__back {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: 5px;
+    background-color: darkred;
+    border: 1px solid #000;
+}
+.light__back::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: -10px;
+    left: 1px;
+    background-color: darkred;
+    border: 1px solid #000;
+}
+
+
+.light__front {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    right: 5px;
+    background-color: darkorange;
+    border: 1px solid #000;
+}
