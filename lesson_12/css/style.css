@@ -146,7 +146,7 @@ body{
 .content-wrapper--style{
     background-color: #ffffff54;
     transform-style: preserve-3d;
-    transform: rotate3d(0deg 0deg 0deg);
+    transform: rotate3d(1, 1, 1, 0deg);
 }
 
 .style__block:hover{
