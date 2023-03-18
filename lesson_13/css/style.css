@@ -1,0 +1,608 @@
+@import url("reset.css");
+
+body{
+    background-color: #fff;
+}
+
+.wrapper{
+    overflow: clip;
+	min-height: 100%;
+    
+}
+
+.himars__car {
+	
+}
+
+.himars{
+    animation: himars-movement 5s forwards cubic-bezier(0.39, -0.42, 0.47, 1.35);
+}
+
+@keyframes himars-movement{
+    0%{
+        transform: translate(-100%, 0%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+.himars--margin{
+    padding-top: 470px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+.rocket__wrapper{
+    position: relative;
+}
+
+.rocket__body{
+    width: 300px;
+    height: 75px;
+    background-color: rgb(70, 80, 50);
+    position: relative;
+    border-radius: 5px;
+    top: -1px;
+    z-index: 2;
+}
+.rocket__body::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: rgb(70, 80, 50);
+    top: 0;
+    left: 98%;
+}
+
+.rocket__body::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: -10px;
+    left: 344px;
+    background-color: rgb(70, 80, 50);
+}   
+
+
+.rocket-body__decor{
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;    
+}
+
+.rocket-body__decor-1{
+    top: 12px;
+    left: 75px;
+}
+
+.rocket-body__decor-2{
+    top: 12px;
+    left: 150px;
+}
+
+.rocket-body__decor-3{
+    position: absolute;
+    width: 40px;
+    height: 52px;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 12px;
+    left: 225px;
+}
+
+.rocket-body__decor-4{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(70, 80, 50);
+    bottom: 99%;
+    left: 113px;
+    border-radius: 3px;
+    border: 0.1px solid black;
+}
+
+
+.himars__pendant{
+    position: relative;
+    left: 0;
+    bottom: 100%;
+    width: 570px;
+    height: 45px;
+    background-color: rgb(70, 80, 50);
+}
+
+
+
+.pendant__tank-1{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 0;
+    left: 230px;
+    background-color: rgb(94, 110, 62);
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+
+.pendant__tank-1::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 10px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.pendant__tank-1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 10px;
+    left: 0;
+    border-top: 0.5px solid black;
+}
+
+.pendant__tank-2{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    top: 0;
+    left: 315px;
+    background-color: rgb(94, 110, 62);
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-1{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-2{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-3{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+.pendant__tank-2--decor-4{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 5px;
+    height: 100%;
+    background-color: rgb(70, 80, 50);
+    border: 0.1px solid black;
+}
+
+
+.himars__wheels{
+    position: relative;
+}
+
+
+
+.wheel{
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #181717;
+    border-radius: 50%;
+    border: 5px dashed darkgrey;
+    animation: wheels-rotate 5s cubic-bezier(0.39, -0.42, 0.47, 1.35);
+}
+
+
+
+@keyframes wheels-rotate{
+    0% {
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.wheel::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px dotted darkgrey;
+}
+.wheel::before{
+    content: "";
+    position: absolute;
+    top: 37px;
+    left: 37px;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(95, 92, 92);
+    border-radius: 50%;
+}
+
+.wheel-1{
+    left: 15px;
+}
+
+.wheel-2{
+    left: 130px;
+}
+
+.wheel-3{
+    left: 410px;
+}
+
+
+.pendant__box{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(70, 80, 50);
+    top: -50px;
+    right: 215px;
+    border-radius: 3px;
+}
+
+.pendant__box::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.pendant__box::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: 25px;
+    left: 10px;
+    background-color: #000;
+}
+
+.pendant__box-2{
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    background-color: rgb(70, 80, 50);
+    top: -60px;
+    right: 172px;
+    border-radius: 3px;
+}
+
+.pendant__box-2::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.pendant__box-2::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: 25px;
+    left: 10px;
+    background-color: #000;
+
+}
+
+.pendant__step{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    right: 52px;
+    background-color: darkgrey;
+}
+
+.pendant__step-1{
+    bottom: 21px;
+}
+.pendant__step-2{
+    width: 16px;
+    bottom: 11px;
+}
+
+.cabin__top{
+    position: relative;
+    width: 160px;
+    height: 50px;
+    left: 400px;
+    bottom: 125px;
+    background-color: rgb(70, 80, 50);
+}
+
+.cabin__top::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    top: -22px;
+    right: -47px;
+    transform: rotate(50deg);
+}
+.cabin__top::before{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 80px;
+    top: 15px;
+    right: 35px;
+    border: 2px solid #000;
+    z-index: 4;
+}
+
+.cabin__bottom{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    left: 420px;
+    bottom: 125px;
+    background-color: rgb(70, 80, 50);
+}
+
+.cabin__window{
+    position: absolute;
+    top: 30px;
+    right: 46px;
+    width: 22px;
+    height: 12px;
+    background-color: lightskyblue;
+    border: 1px solid #000;
+}
+
+.cabin__window::after{
+    content: "";   
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    top: -10px;
+    left: 149%;
+    background-color: rgb(94, 110, 62);
+    z-index: 10;
+}
+
+.cabin__window::before{
+    content: "";   
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    bottom: -47px;
+    left: 149%;
+    background-color: rgb(94, 110, 62);
+    z-index: 10;
+}
+
+.cabin__antenna{
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background-color: rgb(94, 110, 62);
+    bottom: 80%;
+    left: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cabin__handrail{
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    background-color: #000;
+    top: 30px;
+    left: 60px;
+    z-index: 5;
+}
+
+.rocket__body{
+    animation: rocket-wrapper 1s cubic-bezier(0.39, -0.42, 0.47, 1.35) 5s forwards;
+    transform-origin: 0px 100%;
+}
+
+@keyframes rocket-wrapper{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+
+
+.light {
+}
+.light__back {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    left: 5px;
+    background-color: darkred;
+    border: 1px solid #000;
+}
+.light__back::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: -10px;
+    left: 1px;
+    background-color: darkred;
+    border: 1px solid #000;
+}
+
+
+.light__front {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 30px;
+    right: 5px;
+    background-color: darkorange;
+    border: 1px solid #000;
+}
+
+
+.accident{
+    position: absolute;
+    top: 470px;
+    right: 100px;
+    animation: chmo-dead 1s ease 10s, chmo-clear 0.1s ease forwards 11s;
+}
+
+
+@keyframes chmo-dead{
+    0%{
+
+    }
+    100%{
+        transform: rotate(360deg) translate(1000px, 1000px);
+    }
+}
+
+@keyframes chmo-clear{
+    0%{
+
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+
+.accident__chmo img{
+    width: 60px;
+}
+
+.boom{
+    max-width: 400px;
+    position: absolute;
+    top: 450px;
+    right: -10px;
+    z-index: 5;
+    opacity: 0;
+    animation: boom 0.4s 6 alternate 10s;
+}
+.boom img{
+    max-width: 100%;
+}
+
+@keyframes boom{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+
+
+.rocket__shoot {
+    position: relative;
+    z-index: -1;
+}
+.shoot {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    opacity: 0;
+    animation: rocket-1 3s linear 7s;
+}
+
+@keyframes rocket-1{
+    0%{
+        transform: translateX(0px) rotate(0deg);
+        opacity: 1;
+    }
+    33%{
+        transform: translateX(400px) rotate(0deg);
+        opacity: 1;
+    }
+    66%{
+        transform: translate(400px, 0px) rotate(60deg);
+        opacity: 1;
+    }
+    
+    100%{
+        transform: translate(800px, 800px) rotate(60deg);
+        opacity: 1;
+    }
+}
+
+
+
+.shoot__body {
+}
+.shoot__top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: darkgreen;
+    border-radius: 30% 70% 100% 0% / 0% 50% 50% 100%;
+}
+.shoot__middle {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 60px;
+    height: 20px;
+    background-color: darkgreen;
+}
+.shoot__back {
+    position: absolute;
+    top: -4px;
+    right: 70px;
+    width: 32px;
+    height: 32px;
+    border-radius: 30% 70% 100% 0% / 0% 50% 50% 100%;
+    background-color: darkgreen;
+}
