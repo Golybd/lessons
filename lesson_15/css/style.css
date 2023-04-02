@@ -132,6 +132,7 @@ body{
     margin-bottom: 30px;
 }
 .item-advantages__bottom {
+    padding-top: 15px;
     display: flex;
     gap: 80px;
 }
