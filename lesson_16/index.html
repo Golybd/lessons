@@ -39,7 +39,7 @@
                             <input id="email-1" name="email" class="form__input" required placeholder="Email" type="email">
                         </div>
                         <div class="form__line">
-                            <input class="form__input" required name="token" minlength="3" value="1231231414"  type="hidden">
+                            <input class="form__input" name="token" value="1231231414"  type="hidden">
                         </div>
                         <div class="form__line">
                             <label class="form__label" for="phone-1">Your Phone num here 👉</label>
@@ -111,7 +111,7 @@
                             <input type="text" required name="last-name" placeholder="Last name*" class="form-checkout__input">
                             <input type="text" required name="address" placeholder="Address*" class="form-checkout__input">
                             <input type="text" name="address-2" placeholder="Address line 2" class="form-checkout__input">
-                            <select type="text" required name="country" placeholder="Country*" class="form-checkout__select">
+                            <select required name="country" class="form-checkout__select">
                                 <option disabled selected hidden value="">Country*</option>
                                 <option value="gr">Germany</option>
                                 <option value="uk">United Kingdom</option>
@@ -215,8 +215,8 @@
                                     <input required id="country-1" type="text" name="country" class="guest-shipping__input input-shipping">
                                 </div>
                                 <div class="shipping__item">
-                                    <label class="guest-shipping__label label-shipping" for="state">State/Province<span> *</span></label>
-                                    <select name="state" id="statr-1" class="guest-shipping__select input-shipping">
+                                    <label class="guest-shipping__label label-shipping" for="state-1">State/Province<span> *</span></label>
+                                    <select name="state" id="state-1" class="guest-shipping__select input-shipping">
                                         <option disabled selected hidden  value="none">Please select a region, state or province</option>
                                         <option value="kyiv">Kyiv</option>
                                         <option value="kyiv">Kyiv</option>
