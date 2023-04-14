@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson_16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <div class="page__lesson lesson">
+                <div class="lesson__container">
+                    <form class="lesson__form form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="form__line">
+                            <label class="form__label" for="username-1">Your name here 👉</label>
+                            <input class="form__input" id="username-1" name="username" value="Username" type="text">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" placeholder="Nickname" type="text">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" placeholder="autocomplete off" autocomplete="off" type="text">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" placeholder="Max value 99" maxlength="2" type="text">
+                        </div>
+                        <div class="form__line">
+                            <input name="Username" class="form__input" required placeholder="Username*" minlength="3"  type="text">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="age-1">Your age here 👉</label>
+                            <input id="age-1" name="age" class="form__input" disabled placeholder="20" type="text">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="email-1">Your email here 👉</label>
+                            <input id="email-1" name="email" class="form__input" required placeholder="Email" type="email">
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" required name="token" minlength="3" value="1231231414"  type="hidden">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="phone-1">Your Phone num here 👉</label>
+                            <input id="phone-1" name="phone" class="form__input" placeholder="Phone" type="tel">
+                        </div>
+                        <div class="form__line">
+                            <label class="form__label" for="password-1">Your password here 👉</label>
+                            <input id="password-1" name="pass" required class="form__input" placeholder="password" type="password">
+                        </div>
+                        <div class="form__line">
+                            <input name="num" class="form__input" placeholder="count" type="number">
+                        </div>
+                        <div class="form__line">
+                            <input name="color" class="form__input" type="color" value="#ffffff">
+                        </div>
+                        <div class="form__line">
+                            <input name="search" class="form__input" autocomplete="off" placeholder="Query" type="search">
+                        </div>
+                        <div class="form__line">
+                            <input name="date" class="form__input" type="date">
+                        </div>
+                        <div class="form__line">
+                            <input name="range" class="form__input" type="range">
+                        </div>
+                        <div class="form__line">
+                            <input name="car" id="car-1" checked class="form__input" type="checkbox">
+                            <label class="form__label" for="car-1">Do you have a car ?</label>
+                        </div>
+                        <div class="form__line">
+                            <div class="form__title">Best game of all time?</div>
+                            <div class="form__radio">
+                                <input id="game-1" value="cyberpunk2077" checked name="game" type="radio" class="form__input">
+                                <label class="form__label" for="game-1">Cyberpunk 2077</label>
+                            </div>
+                            <div class="form__radio">
+                                <input name="game" id="game-2" value="another" disabled type="radio" class="form__input">
+                                <label class="form__label" for="game-2">Another game</label>
+                            </div>
+                        </div>
+                        <div class="form__line">
+                            <input class="form__input" multiple name="file" type="file">
+                        </div>
+                        <div class="form__line">
+                            <textarea name="message" class="form__area" placeholder="Your message..."></textarea>
+                        </div>
+                        <div class="form__line">
+                            <select name="list">
+                                <option value="1">Item 1</option>
+                                <option value="2">Item 2</option>
+                                <option value="3">Item 3</option>
+                                <option value="4">Item 4</option>
+                                <option value="5">Item 5</option>
+                                <option value="6">Item 6</option>
+                            </select>
+                        </div>
+                        <div class="form__line">
+                            <p><button type="submit">Submit</button></p>
+                            <p><button type="reset">reset</button></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="page__checkout checkout">
+                <div class="checkout__container">
+                    <h2 class="checkout__title">Billing Details</h2>
+                    <form action="#" method="post" class="checkout__form form-checkout">
+                        <div class="form-checkout__details">
+                            <input type="text" required name="first-name" placeholder="First name*" class="form-checkout__input">
+                            <input type="text" required name="last-name" placeholder="Last name*" class="form-checkout__input">
+                            <input type="text" required name="address" placeholder="Address*" class="form-checkout__input">
+                            <input type="text" name="address-2" placeholder="Address line 2" class="form-checkout__input">
+                            <select type="text" required name="country" placeholder="Country*" class="form-checkout__select">
+                                <option disabled selected hidden value="">Country*</option>
+                                <option value="gr">Germany</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="fr">France</option>
+                                <option value="it">Italy</option>
+                                <option value="sp">Spain</option>
+                                <option value="uan">Ukraine</option>
+                                <option value="pl">Poland</option>
+                                <option value="rm">Romania</option>
+                                <option value="nh">Netherlands</option>
+                            </select>
+                            <input type="text" required name="city" placeholder="City/Town*" class="form-checkout__input">
+                            <input type="text" required name="postcode" placeholder="Postcode / ZIP*" class="form-checkout__input">
+                            <input type="tel" required name="phone-1" placeholder="Phone*" class="form-checkout__input">
+                            <input type="text" required name="zip" placeholder="Postcode / ZIP*" class="form-checkout__input">
+                            <input type="tel" required name="phone-2" placeholder="Phone*" class="form-checkout__input">
+    
+                            <textarea name="message" class="form-checkout__textarea" placeholder="Additional information"></textarea>
+                        </div>
+
+                        <div class="form-checkout__checkboxes checkboxes-form-checkout">
+                            <div class="checkboxes-form-checkout__wrapper">
+                                <input checked name="create_account" id="account-1" type="checkbox" class="checkboxes-form-checkout__checkbox">
+                                <label class="checkboxes-form-checkout__label" for="account-1">Create Account</label>
+                            </div>
+                            <div class="checkboxes-form-checkout__wrapper">
+                                <input name="dif_ship" id="address-3" type="checkbox" class="checkboxes-form-checkout__checkbox">
+                                <label class="checkboxes-form-checkout__label" for="address-3">Ship to a different address?</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="checkout__coupon coupon-checkout">
+                        <form class="coupon-checkout__form">
+                            <h2 class="coupon-checkout__title">Apply Coupon to get discount!</h2>
+                            <div class="coupon-checkout__body">
+                                <input type="text" placeholder="Coupon code" class="coupon-checkout__input">
+                                <button type="submit" class="coupon-checkout__button">Apply Code</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="page__shipping shipping">
+                <div class="shipping__container">
+                    <h2 class="shipping__title title">Shipping Address</h2>
+                    <div class="shipping__login login-shipping">
+                        <form action="#" method="post" class="login-shipping__form">
+                            <div class="shipping__items login-shipping__items">
+                                <div class="shipping__item">
+                                    <label class="login-shipping__label label-shipping" for="email-2">Email Address<span> *</span></label>
+                                    <input required id="email-2" type="email" name="email" placeholder="roni_cost@example.com" class="login-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item">
+                                    <label class="login-shipping__label label-shipping" for="password-2">Password</label>
+                                    <input id="password-2" type="password" name="pass" placeholder="******************" class="login-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item">
+                                    <label class="login-shipping__label label-shipping" for="zip-1">Zip/Postal Code</label>
+                                    <input id="zip-1" type="tel" name="zip" class="login-shipping__input input-shipping">
+                                </div>
+                            </div>
+                            <div class="login-shipping__text">
+                                <p>You already have an account with us. Sign in or continue as guest.</p>
+                            </div>
+                            <div class="login-shipping__wrapper">
+                                <button type="submit" class="login-shipping__button shipping__button">LOGIN</button>
+                                <a href="#" class="login-shipping__forgot">Forgot Your Password?</a>
+                            </div>    
+                        </form>
+                    </div>
+                    <div class="shipping__guest guest-shipping">
+                        <form action="#" method="post" class="guest-shipping__form">
+                            <div class="guest-shipping__items shipping__items">
+                                <div class="shipping__item">
+                                    <label class="guest-shipping__label label-shipping" for="first-name-2">First Name<span> *</span></label>
+                                    <input required id="first-name-2" type="text" name="first-name" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item">
+                                    <label class="guest-shipping__label label-shipping" for="last-name-2">Last Name<span> *</span></label>
+                                    <input required id="last-name-2" type="text" name="last-name" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item">
+                                    <label class="guest-shipping__label label-shipping" for="company-1">Company</label>
+                                    <input id="company-1" type="text" name="company" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item">
+                                    <label class="guest-shipping__label label-shipping" for="address-4">Street Address<span> *</span></label>
+                                    <input required id="address-4" type="text" name="address" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item shipping__item--alone">
+                                    <input  id="address-5" type="text" name="address-2" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item shipping__item--alone">
+                                    <input  id="address-6" type="text" name="address-3" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item shipping__item--alone">
+                                    <input  id="address-7" type="text" name="address-4" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item">
+                                    <label class="guest-shipping__label label-shipping" for="country-1">Country<span> *</span></label>
+                                    <input required id="country-1" type="text" name="country" class="guest-shipping__input input-shipping">
+                                </div>
+                                <div class="shipping__item">
+                                    <label class="guest-shipping__label label-shipping" for="state">State/Province<span> *</span></label>
+                                    <select name="state" id="statr-1" class="guest-shipping__select input-shipping">
+                                        <option disabled selected hidden  value="none">Please select a region, state or province</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                        <option value="kyiv">Kyiv</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="shipping__method method-shipping">
+                                <h3 class="method-shipping__title title">Shipping Methods</h3>
+                                <div class="method-shipping__items">
+                                    <div class="method-shipping__item">
+                                        <div class="method-shipping__wrapper">
+                                            <input checked id="radio-1" type="radio" name="method-radio" class="method-shipping__input">
+                                            <label for="radio-1" class="method-shipping__label">$5.00</label>
+                                        </div>
+                                        <div class="method-shipping__text">Fixed</div>
+                                        <div class="method-shipping__text">Flat Rate</div>
+                                    </div>
+                                    <span class="method-shipping__line"></span>
+                                    <div class="method-shipping__item">
+                                        <div class="method-shipping__wrapper">
+                                            <input id="radio-2" type="radio" name="method-radio" class="method-shipping__input">
+                                            <label for="radio-2" class="method-shipping__label">$10.00</label>
+                                        </div>
+                                        <div class="method-shipping__text">Table Rate</div>
+                                        <div class="method-shipping__text">Best Way</div>
+                                    </div>
+                                </div>
+                                <div class="method-shipping__buttons">
+                                    <a href="#" class="method-shipping__next">next</a>
+                                    <a href="" class="method-shipping__back">Back</a>
+                                </div>
+                                
+                            </div>
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
