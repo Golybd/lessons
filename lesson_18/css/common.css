@@ -8,7 +8,7 @@
 }
 
 .title--white{
-    color: #fff;
+    color: #F8F9FA;
 }
 
 .title--medium{
@@ -21,6 +21,7 @@
 .date{
     font-weight: 300;
     line-height: 1.6;
+    color: #495057;
 }
 
 .logo {
