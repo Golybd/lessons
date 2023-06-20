@@ -1,0 +1,9 @@
+@function lh($fontSize, $lineHeight){
+    $result: math.div($lineHeight, $fontSize);
+    @return $result;
+}
+
+@function percent($num1, $num2){
+    $result: math.div($num1, $num2) * 100%;
+    @return $result;
+}
