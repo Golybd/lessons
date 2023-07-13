@@ -1,0 +1,20 @@
+
+@function lh($fontSize, $lineHeight){
+    $result: math.div($lineHeight, $fontSize);
+    @return $result;
+}
+
+@function percent($num1, $num2){
+    $result: math.div($num1, $num2) * 100%;
+    @return $result;
+}
+
+@function rem($px){
+    $result: math.div($px, 16) + rem ;
+    @return $result;
+}
+
+@function em($px, $current: 16){
+    $result: math.div($px, $current) + em;
+    @return $result;
+}
